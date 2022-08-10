@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My site Home page</title>
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">
+  <style>
+    .translation-form {
+      background-image: url('./images/i.webp'); 
+      background-size: cover; 
+      background-repeat: no-repeat;
+      width: 600px;
+      height: 400px;
+      border: 25px solid #f230f256;
+      position: relative;
+    }
+
+    .translate-label {
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 32px;
+      text-align: center;
+      color: dark;
+      background-color: wheat;
+      width: 420px;
+      margin-right: auto;
+      margin-left: auto;
+      border: 5px solid rgb(89, 255, 0);
+      border-radius: 2rem;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tranlation bg-info">
+    <div class="container">
+      <div class="translation__inner p-5">
+        <form class="translation-form d-flex flex-column justify-content-center mx-auto my-auto" method="Post">
+          <label class="translate-label" for="translate">Hafta kunini kiriting</label>
+  
+          <input class="translate-input" type="text" id="translate" placeholder="Hafta kunini kiriting:" autocomplete="off">
+  
+          <button class="tranlate-button" type="submit">Translate</button>
+        </form>
+  
+        <output class="tranlate-output"></output>
+      </div>
+    </div>
+  </div>
+  
+  <!-- DTM -->
+
+  <div class="container bg-light py-3">
+    <h3 class="text-center mt-5">DTM natijalarini tekshiramiz.</h3>
+
+    <form class="form-score w-50 mx-auto mt-5">
+      <div class="mb-3 d-flex flex-wrap justify-content-sm-between align-items-center">
+        <label class="form-label fw-semibold" for="score-number">Iltimos necha ball olganizni kiriting:</label>
+
+        <input class="input-score form-control w-50" type="number" id="score-number" aria-describedby="emailHelp">
+
+        <span class="form-text me-3 ms-auto" id="dtm-score">Kiritilayotgan son 0 va 189 ball orasida bo'ladi!</span>
+      </div>
+
+      <div class="mb-3 form-check d-inline-block">
+        <input class="input-privilege form-check-input" type="checkbox" id="score-privilege">
+
+        <label class="form-check-label" for="score-privilege">Imtiyozingiz ham bormi?</label>
+      </div>
+
+      <button class="btn btn-primary d-block w-100" type="submit">Submit</button>
+    </form>
+
+    <div class="score-result alert w-50 mt-5 mx-auto text-center">
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="./javascript/script.js"></script>
+</body>
+
+</html>
